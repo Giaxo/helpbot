@@ -1,0 +1,68 @@
+.App {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event-container {
+  width: 75%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightsteelblue;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.event-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.event-label {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.event-time {
+  display: inline;
+  font-size: 25px;
+  font-weight: 600;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 15px;
+  margin-bottom: 30px;
+}
+
+.event-name {
+  display: inline;
+  font-size: 35px;
+  font-weight: 600;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 15px;
+}
+
+.event-close {
+  border-radius: 10px;
+  width: 250px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  background-color: white;
+  border: 2px solid black;
+  margin-top: 60px;
+}
