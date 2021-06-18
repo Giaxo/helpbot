@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" />
+  <node pkg="helpbot" type="timeserver.py" name="timeserver" output="screen" />
+  <node pkg="helpbot" type="main.py" name="ROS_calendar" output="screen" args="" />
+</launch>

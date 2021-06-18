@@ -1,0 +1,5 @@
+string eventName
+string date
+bool isWeekly
+---
+string resultCode

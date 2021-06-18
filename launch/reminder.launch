@@ -1,0 +1,5 @@
+<launch>
+    <arg name="event"/>
+    <rosparam param="event" subst_value="True">$(arg event)</rosparam>
+    <node pkg="helpbot" type="reminder.py" name="$(anon reminder)" output="screen" />
+</launch>

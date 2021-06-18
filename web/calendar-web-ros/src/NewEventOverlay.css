@@ -1,0 +1,84 @@
+.new-event-overlay {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0.1, 0.1, 0.1, 0.7);
+  }
+  
+  .new-event-overlay-content {
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width: 75%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightsteelblue;
+    border-radius: 20px;
+    margin: auto;
+  }
+  
+  .new-event-overlay-close {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .new-event-overlay-form {
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .new-event-overlay-input {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .new-event-overlay-label {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  
+  .new-event-overlay-text {
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .new-event-overlay-datepicker {
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .new-event-overlay-submit {
+    align-self: center;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid black;
+  }
