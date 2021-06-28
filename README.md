@@ -3,4 +3,5 @@
 2) <code>npm install create-react-app</code> <br>
 3) go to web/calendar-web-ros and run <code>npm install</code> <br>
 4) go to web/reminder-web-ros and run <code>npm install</code> <br>
-5) give execution permission to all .sh files in web folder
+5) give execution permission to all .sh files in web folder <br>
+6) install ros package with <code>catkin_make</code>
