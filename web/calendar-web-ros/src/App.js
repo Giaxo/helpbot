@@ -264,9 +264,11 @@ function App() {
   return (
 
     <div className="App">
-      <div className="new-event-button" onClick={newEventOverlayToggle}>
-        <img className="new-event-plus" src="plus.png" alt="add avent plus" />
-        Nuovo evento
+      <div className="calendar-header">
+        <div className="new-event-button" onClick={newEventOverlayToggle}>
+          <img className="new-event-plus" src="plus.png" alt="add avent plus" />
+          Nuovo evento
+        </div>
       </div>
       <div className="calendar-container">
         <Calendar

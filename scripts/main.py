@@ -22,10 +22,10 @@ def activateEvents(e):
         print("Activating events:")
         for event in foundEvents:
             print(event.name+": "+event.type)
+            activeEventsPub.publish(jsonpickle.encode(event))
             if(event.type=="Promemoria"):
                 startReminder(event)
             else:
-                activeEventsPub.publish(jsonpickle.encode(event))
                 roslaunch.pmon._init_signal_handlers = lambda: None
                 uuid = roslaunch.rlutil.get_or_generate_uuid(None, False)
                 #print("UUID: "+uuid)
@@ -145,6 +145,4 @@ if __name__ == "__main__":
 
 
 #TODO
-#Implement "Promemoria"
-#Implement "Musicoterapia"
 #Remove dict entry when empty (check when remove event)

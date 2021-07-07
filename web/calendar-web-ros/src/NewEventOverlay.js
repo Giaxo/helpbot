@@ -56,7 +56,7 @@ function NewEventOverlay(props) {
                   strictParsing
                 />
               </div>
-              <select className="new-event-overlay-text" name="newEventWeekday" id="newEventWeekday" value={newEventWeekday} onChange={(event)=>{setNewEventWeekday(event.target.value)}} style={newEventIsWeekly?{}:{display: 'none'}}>
+              <select className="new-event-overlay-select" name="newEventWeekday" id="newEventWeekday" value={newEventWeekday} onChange={(event)=>{setNewEventWeekday(event.target.value)}} style={newEventIsWeekly?{}:{display: 'none'}}>
                 <option value="0">Lunedì</option>
                 <option value="1">Martedì</option>
                 <option value="2">Mercoledì</option>
@@ -108,7 +108,7 @@ function NewEventOverlay(props) {
               <div className="new-event-overlay-label">
                 Seleziona il tipo:
               </div>
-              <select className="new-event-overlay-text" name="newEventType" id="newEventType" value={newEventType} onChange={(event)=>{setNewEventType(event.target.value)}}>
+              <select className="new-event-overlay-select" name="newEventType" id="newEventType" value={newEventType} onChange={(event)=>{setNewEventType(event.target.value)}}>
                 {props.eventTypes.map(x => <option key={x} value={x}>{x}</option>)}
               </select>
             </div>
